@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+ 
+  .box{
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i0.wp.com/dirt.asla.org/wp-content/uploads/2022/01/natural-garden_dirt.jpg?ssl=1');
+    background-size: cover;
+  }
+  .box::before{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 150px;
+    /* background-color: rgba(255, 68, 0, 0.685); */
+    background-image: url('https://d1tfm8vclpltjj.cloudfront.net/wp-content/uploads/2021/05/lesson-plan-how-to-draw-a-bird.indd_How-to-draw-step-4undefined_6-1434x660.jpg');
+    background-size: 150px 300px;
+    opacity: 0.4;
+    transition: 1s;
+    
+  }
+  .box:hover::before{
+    width: 0;
+    height: 0;
+    transition: 1s;
+  }
+  .box::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 150px;
+    /* background-color: rgba(0, 0, 0, 0.607); */
+    background-image: url('https://resize.indiatvnews.com/en/resize/newbucket/1080_-/2023/03/untitled-design-39-1678982294.jpg');
+    background-size: 150px 300px;
+    opacity: 0.4;
+    /* left: 157px; */
+    right: 972px;
+    bottom: 243.5px;
+    transition: 1s;
+  }
+  .box:hover::after{
+    width: 0;
+    height: 0;
+    transition: 1s;
+  }
+
+  #para{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    height: 32px;
+    border-bottom: 2px solid black;
+  }
+  #para::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 32px;
+    left: 0;
+    border-bottom: 2px solid yellow;
+    transition: 1s;
+  }
+  #para:hover::before{
+    border-bottom: 2px solid yellow;
+    width: 200px;
+    transition: 1s;
+  }
+</style>
+<body>
+  
+
+  <div class="box">
+
+  </div>
+
+
+  <div id="para">Royal technosoft</div>
+
+</body>
+</html>

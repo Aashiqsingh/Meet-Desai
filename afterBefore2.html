@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box{
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i0.wp.com/dirt.asla.org/wp-content/uploads/2022/01/natural-garden_dirt.jpg?ssl=1');
+    background-size: cover;
+  }
+  .box::before{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 68, 0, 0.685);
+    transition: 1s;
+    right: 972px;
+    bottom: 242px;
+  }
+  .box:hover::before{
+    width: 0;
+    height: 0;
+    transition: 1s;
+  }
+</style>
+<body>
+  
+
+  <div class="box">
+
+  </div>
+</body>
+</html>
