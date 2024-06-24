@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main {
+        display: flex;
+        justify-content: space-around;
+        height: 500px;
+        border: 4px solid orangered;
+        align-items: center;
+        border-radius: 30px;
+        background-color: teal;
+    }
+
+    .image {
+        width: 30%;
+    }
+
+    .image img {
+        width: 100%;
+
+    }
+
+    .para {
+        width: 65%;
+        font-size: 22px;
+        text-align: justify;
+        color: white;
+    }
+
+
+    @media(max-width: 500px) {
+        .main {
+            background-color: red;
+            display: block;
+            height: auto;
+            padding: 10px;
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .image img {
+            width: 100%;
+            border-radius: 30px;
+            border: 4px dotted white;
+        }
+
+        .para {
+            width: 100%;
+            margin-top: 10px;
+            text-align: justify;
+        }
+    }
+
+    @media(min-width: 501px) and (max-width: 900px){
+        .main{
+            background-color: violet;
+            height: 100%;
+        }
+        .image{
+            width: 45%;
+        }
+        .image img{
+            border-radius: 50%;
+            border: 5px dashed darkblue;
+        }
+        .para{
+            width: 50%;
+        }
+    }
+
+    @media(min-width: 900px) {
+        .main {
+            background-color: skyblue;
+            height: auto;
+        }
+
+        .image img {
+            transform: scale(0.8);
+        }
+    }
+</style>
+
+<body>
+
+    <!-- media querry : for create responsive website -->
+
+    <div class="main">
+        <div class="image">
+            <img src="https://pbs.twimg.com/profile_images/968380843906527233/26WKEI9O_400x400.jpg" alt="">
+        </div>
+        <div class="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi natus tempora sint ratione. Accusamus, quod
+            repellat necessitatibus error est, fugiat placeat quibusdam eaque autem neque ab provident nisi natus vel
+            numquam, quisquam maiores debitis. Distinctio assumenda fugit sequi dolore tempora vitae corporis at
+            consequatur possimus facere culpa doloribus recusandae nulla tenetur esse quo quidem dignissimos, deserunt
+            ad ipsam minima id aspernatur sapiente blanditiis. Voluptatum nisi, vel, reiciendis ipsum consequatur beatae
+            explicabo eaque mollitia sit eius sint amet assumenda commodi, hic impedit ea quos aspernatur ipsa voluptas
+            sequi ipsam omnis et itaque reprehenderit! Vitae exercitationem a id nobis. Aliquid, velit quod?
+        </div>
+    </div>
+
+
+</body>
+
+</html>
