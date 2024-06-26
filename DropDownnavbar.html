@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        height: 100px;
+        width: 100%;
+        background-color: teal;
+    }
+
+    .nav ul li {
+        float: inline-start;
+        list-style: none;
+        width: 150px;
+        text-align: center;
+        line-height: 100px;
+        position: relative;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        display: block;
+    }
+
+    .nav ul li a:hover {
+        background-color: orangered;
+        color: black;
+        font-family: cursive;
+        text-shadow: 1px 1px 1px yellow;
+    }
+
+    .nav ul ul {
+        position: absolute;
+        background-color: teal;
+        display: none;
+    }
+
+    .nav ul li:hover>ul {
+        display: block;
+    }
+
+    .nav ul ul ul {
+        /* left: 150px; */
+        left: 100%;
+        /* right: 100%; */
+
+        top: 0;
+    }
+</style>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Service</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Service</a>
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Service</a></li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Feedback</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Feedback</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Feedback</a></li>
+                </ul>
+            </li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
