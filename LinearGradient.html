@@ -32,14 +32,19 @@
         animation-timing-function: linear;
     }
     @keyframes ani1{
-        from{
+        0%{
             transform: rotate(0);
             background: repeating-radial-gradient(red 10%, green 20%, blue 30%);
-            border-radius: 0%;
+            border-radius: 20%;
         }
-        to {
+        50%{
+            transform: rotate(25%);
+            background: repeating-radial-gradient(red 12%, green 22%, blue 32%);
+            border-radius: 30%;
+        }
+        100% {
             transform: rotate(360deg);
-            background: repeating-radial-gradient(red 13%, green 23%, blue 33%);
+            background: repeating-radial-gradient(red 14%, green 24%, blue 34%);
             border-radius: 40%;
         }
     }
